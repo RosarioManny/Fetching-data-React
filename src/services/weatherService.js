@@ -13,7 +13,6 @@ const show = async (city) => {
       const data = await res.json();
 
     // vv Displays and returns the data that was recieved 
-      console.log('Data:', data);
       return data;
 
     // vv Error handliing
@@ -22,4 +21,4 @@ const show = async (city) => {
     }
 };
 
-show('New York')
+export { show }
