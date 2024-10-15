@@ -10,6 +10,7 @@ const WeatherSearch = (props) => { // F.
     const handleSubmit = (e) => {
         // Prevents form default action
         e.preventDefault();
+        props.fetchData(city)
         setCity('')
     };
 
